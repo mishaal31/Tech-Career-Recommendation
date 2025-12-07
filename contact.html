@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="contact-box">
-
-        <h1>Contact Us</h1>
-
-    <form>
-
-    <label><b>Full Name:</b></label>
-    <input type="text" name="fullname" placeholder="Full Name" required>
-
-    <label><b>E-mail:</b></label>
-    <input type="email" name="email" placeholder="Enter your email" required>
-
-    <label><b>Contact Number:</b></label>
-    <input type="tel" name="contact" placeholder="Enter your contact number" required>
-
-    <label><b>Gender:</b></label>
-    <div class="options">
-        <input type="radio" name="gender" value="male"> Male <br>
-        <input type="radio" name="gender" value="female"> Female
+    <!-- Header / Navbar -->
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav">
+            <a href="contact.html" class="links">Contact Us</a>
+            <a href="careers.html" class="links">Explore Careers</a>
+            <a href="index.html#guide" class="links">Guide</a>
+            <a href="quiz.html" class="choose-career">Choose Your Career</a>
+        </div>
     </div>
 
-    <label><b>Country:</b></label>
-    <select>
-        <option>Pakistan</option>
-        <option>Scotland</option>
-        <option>Turkey</option>
-        <option>China</option>
-        <option>Korea</option>
-        <option>Japan</option>
-    </select>
+    <!-- Contact Form Wrapper -->
+    <div class="contact-page">
+        <div class="contact-box">
+            <h1>Contact Us</h1>
+            <form>
+                <label><b>Full Name:</b></label>
+                <input type="text" name="fullname" placeholder="Full Name" required>
 
-    <label><b>How can we help you?</b></label>
-    <textarea rows="5" placeholder="Write your message"></textarea>
+                <label><b>Email:</b></label>
+                <input type="email" name="email" placeholder="Enter your email" required>
 
-    <button type="submit" class="btn">Submit</button>
+                <label><b>Contact Number:</b></label>
+                <input type="tel" name="contact" placeholder="Enter your contact number" required>
 
-    </form>
+                <label><b>Gender:</b></label>
+                <div class="options">
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
 
+                <label><b>Country:</b></label>
+                <select>
+                    <option>Pakistan</option>
+                    <option>Scotland</option>
+                    <option>Turkey</option>
+                    <option>China</option>
+                    <option>Korea</option>
+                    <option>Japan</option>
+                </select>
+
+                <label><b>How can we help you?</b></label>
+                <textarea rows="4" col="3" placeholder="Write your message"></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
     </div>
 
 </body>
+
 </html>

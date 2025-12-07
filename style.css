@@ -253,88 +253,94 @@
       color: #000;
       ;
     }
+    /* ===== Contact Form Styles ===== */
 
-     * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", sans-serif;
-        }
+.contact-page {
+    width: 100%;
+    min-height: 100vh; /* full screen height */
+    background: url('images/contact-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* space under navbar */
+    box-sizing: border-box;
+}
 
-        body {
-            background: url("images/loginform1.png") no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+.contact-box {
+    background: #eaeaea; /* white background */
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px; /* form width */
+    margin: 20px auto; /* center horizontally with space from top */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
 
-        .contact-box {
-            background: rgba(255, 255, 255, 0.92);
-            padding: 30px;
-            border-radius: 12px;
-            width: 420px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-            backdrop-filter: blur(4px);
-        }
+/* Form heading */
+.contact-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003d99;
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 18px;
-            font-size: 28px;
-            color: #003d99;
-        }
+/* Form labels */
+.contact-box label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
 
-        label {
-            font-weight: 600;
-            display: block;
-            margin-bottom: 6px;
-            color: #333;
-        }
+/* Input fields and textarea */
+.contact-box input[type="text"],
+.contact-box input[type="email"],
+.contact-box input[type="tel"],
+.contact-box select,
 
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 6px;
-            border: 1px solid #bbb;
-            font-size: 15px;
-            outline: none;
-        }
+.contact-box textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 15px;
+    outline: none;
+}
 
-        input:focus, textarea:focus, select:focus {
-            border-color: #0066ff;
-        }
+/* Focus effect */
+.contact-box input:focus,
+.contact-box textarea:focus,
+.contact-box select:focus {
+    border-color: #0066ff;
+}
 
-        textarea {
-            resize: none;
-        }
+/* Disable textarea resizing */
+.contact-box textarea {
+    resize: none;
+}
 
-        .options {
-            margin-bottom: 15px;
-        }
+/* Gender options */
+.contact-box .options {
+    margin-bottom: 15px;
+}
 
-        .options input {
-            margin-right: 6px;
-        }
+.contact-box .options input {
+    margin-right: 6px;
+}
 
-        .btn {
-            width: 100%;
-            padding: 12px;
-            background: #132c4d;
-            border: none;
-            color: white;
-            font-size: 17px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+/* Submit button */
+.contact-box .btn {
+    width: 100%;
+    padding: 12px;
+    background: #132c4d;
+    border: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-        .btn:hover {
-            background: #132c4d;
-        }
+.contact-box .btn:hover {
+    background: #0b1f3d;
+}
+
