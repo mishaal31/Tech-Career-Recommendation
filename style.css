@@ -317,7 +317,6 @@
 
     /* Make labels, inputs, textarea, and dropdown all same width */
     .contact-box label,
-    .contact-box input,
     .contact-box textarea,
     .contact-box select {
       display: block;
