@@ -360,4 +360,54 @@
 
     .contact-box .btn:hover {
       background: #0b1f3d;
+<<<<<<< Updated upstream
     }
+=======
+    }
+
+    /* Fix input width consistency */
+.contact-box input[type="text"],
+.contact-box input[type="email"],
+.contact-box input[type="tel"] {
+  box-sizing: border-box;
+}
+
+/* ===== Result Page Styles ===== */
+.result-container {
+    max-width: 600px;
+    margin: 80px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.result-container h1 {
+    font-size: 2em;
+    color: #132c4d;
+    margin-bottom: 20px;
+}
+
+.career-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #017179; /* green shade */
+    margin-bottom: 25px;
+}
+
+.btn-restart {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #2b5a86; /* your primary button color */
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-restart:hover {
+    background-color: #132c4d;
+}
+>>>>>>> Stashed changes
